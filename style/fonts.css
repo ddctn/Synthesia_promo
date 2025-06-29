@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Impact';
+  src: url(../fonts/Impact.ttf);
+}
+
+@font-face {
+  font-family: 'Suisse';
+  src: url(../fonts/SuisseIntl-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Suisse-SemiBold';
+  src: url(../fonts/SuisseIntl-SemiBold.otf);
+}
+
+@font-face {
+  font-family: 'Suisse-Bold';
+  src: url(../fonts/SuisseIntl-Bold.otf);
+}

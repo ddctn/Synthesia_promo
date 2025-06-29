@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="./script/main.js"></script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <nav>
+        <a href="index.html" class="nav-index-2">главная</a>
+        <a href="events.html" class="nav-events-2">события</a>
+        <a href="guide.html" class="nav-guide-2">руководство</a>
+        <a href="space.html" class="nav-space-2">пространство</a>
+      </nav>
+  </header>
+    <section class="events-first-section">
+      <h1>СОБЫТИЯ</h1>
+    </section>
+    <section id="june-events" class="month-section block">
+      <div class="months-block">
+        <button class="month-btn" data-month="june"><h3 class="june-1">июнь</h3></button>
+        <button class="month-btn" data-month="july"><h3 class="july-1">июль</h3></button>
+        <button class="month-btn" data-month="august"><h3 class="august-1">август</h3></button>
+      </div>
+
+      <div class="posters-block">
+
+        <div class="event-card">
+          <img src="./img/june-poster-1.png" alt="">
+          <div class="poster-cover">
+            <p>open talk</p>
+            <p>10/06/2025</p>
+            <button>регистрация</button>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <img src="./img/june-poster-3.png" alt="">
+          <div class="poster-cover">
+            <p>экскурсия</p>
+            <p>15/06/2025</p>
+            <button>регистрация</button>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <img src="./img/june-poster-2.png" alt="">
+          <div class="poster-cover">
+            <p>презентация</p>
+            <p>18/06/2025</p>
+            <button>регистрация</button>
+          </div>
+        </div>
+        
+        <div class="event-card">
+          <img src="./img/june-poster-4.png" alt="">
+          <div class="poster-cover">
+            <p>подбор баланса</p>
+            <p>30/06/2025</p>
+            <button>регистрация</button>
+          </div>
+        </div>
+        
+      </div>
+      
+    </section>
+
+    <section id="july-events" class="month-section none">
+      <div class="months-block">
+        <button class="month-btn" data-month="june"><h3 class="june-2">июнь</h3></button>
+        <button class="month-btn" data-month="july"><h3 class="july-2">июль</h3></button>
+        <button class="month-btn" data-month="august"><h3 class="august-2">август</h3></button>
+      </div>
+
+      <div class="posters-block">
+
+        <div class="event-card">
+          <img src="./img/july-poster-1.png" alt="">
+          <div class="poster-cover">
+            <p>консультации</p>
+            <p>05/07/2025</p>
+            <button>регистрация</button>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <img src="./img/july-poster-2.png" alt="">
+          <div class="poster-cover">
+            <p>консультации</p>
+            <p>09/07/2025</p>
+            <button>регистрация</button>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <img src="./img/july-poster-3.png" alt="">
+          <div class="poster-cover">
+            <p>презентация</p>
+            <p>15/07/2025</p>
+            <button>регистрация</button>
+          </div>
+        </div>
+        
+        <div class="event-card">
+          <img src="./img/july-poster-4.png" alt="">
+          <div class="poster-cover">
+            <p>экскурсия</p>
+            <p>22/07/2025</p>
+            <button>регистрация</button>
+          </div>
+        </div>
+        
+      </div>
+
+    </section>
+    <section id="august-events" class="month-section none">
+      <div class="months-block">
+        <button class="month-btn active" data-month="june"><h3 class="june-3">июнь</h3></button>
+        <button class="month-btn" data-month="july"><h3 class="july-3">июль</h3></button>
+        <button class="month-btn" data-month="august"><h3 class="august-3">август</h3></button>
+      </div>
+
+      <div class="posters-block">
+        <div class="event-card">
+          <img src="./img/august-poster-1.png" alt="">
+          <div class="poster-cover">
+            <p>экскурсия</p>
+            <p>03/08/2025</p>
+            <button>регистрация</button>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <img src="./img/august-poster-2.png" alt="">
+          <div class="poster-cover">
+            <p>подбор баланса</p>
+            <p>13/08/2025</p>
+            <button>регистрация</button>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <img src="./img/august-poster-3.png" alt="">
+          <div class="poster-cover">
+            <p>презентация</p>
+            <p>18/08/2025</p>
+            <button>регистрация</button>
+          </div>
+        </div>
+        
+        <div class="event-card">
+          <img src="./img/august-poster-4.png" alt="">
+          <div class="poster-cover">
+            <p>open talk</p>
+            <p>30/08/2025</p>
+            <button>регистрация</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="notification" class="notification-hidden">
+      <div class="notification-content">
+        <p>вы успешно зарегистрированы</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-form">
+        <h3>Станьте частью<br>лаборатории Синтезия</h3>
+        <p>оставьте заявку и мы свяжемся с вами</p>
+        <form action="javascript:void(0);" method="post">
+        <p>
+          <input type="text" name="name" id="name" placeholder="Введите имя" required autocomplete="off">
+        </p>
+        <p>
+          <input type="email" name="email" id="email" placeholder="Введите email" required autocomplete="off">
+        </p>
+        <select name="отдел" id="department" required>
+          <option value="">Выберите отдел</option> 
+          <option value="consult">Консультирование</option> 
+          <option value="development">Разработка</option> 
+          <option value="storage">Хранение</option> 
+          <option value="synthesis">Синтез</option>
+        </select><br>
+        <button class="send" type="submit">Отправить</button>
+        </form>
+      </div>
+      <div class="footer-nav">
+        <h1>SYNTHESIA</h1>
+      </div>
+    </div>
+  </footer>
+</body>

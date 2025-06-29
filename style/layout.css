@@ -1,0 +1,413 @@
+:root {
+  --color-primary: #FFFBF8;
+  --color-secondary: #7289FF;
+  --color-covering: #fffbf8e2;
+}
+
+body, html {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--color-primary);
+  cursor: url("../img/cursor.svg"), auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Suisse';
+  font-size: 1.6vw;
+  transition: 0.5s ease;
+}
+
+a:hover {
+  letter-spacing: 0.2rem;
+}
+
+.nav-index-1, .nav-events-2, .nav-guide-3, .nav-space-4 {
+  font-family: 'Suisse-Bold';
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding-top: 2vw;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* MAIN PAGE */
+
+.main-first-section {
+  width: 100%;
+  height: 47vw; 
+  padding-top: 13vw;
+}
+
+.main-first-section p {
+  font-family: 'Suisse-Bold';
+  font-size: 1.8vw;
+  color: var(--color-secondary);
+}
+
+h1 {
+  font-family: 'Impact';
+  color: var(--color-secondary);
+  font-size: 12vw;
+}
+
+/* EVENTS PAGE */
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.months-block-1 {
+  display: flex;
+}
+
+h3 {
+  font-family: 'Impact';
+  font-size: 4.5vw;
+}
+
+.june-1, .july-2, .august-3 {
+  color: black;
+}
+
+.july-1, .july-3, .august-1, .august-2, .june-2, .june-3 {
+  -webkit-text-stroke: 1px black;
+}
+
+.months-block {
+  margin-left: 1vw;
+}
+
+.month-btn {
+  background-color: var(--color-primary);
+  border: none;
+    margin-right: 9vw;
+}
+
+.month-btn:hover {
+  cursor: pointer;
+}
+
+.posters-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6.25vw;
+  padding: 0 1.5vw;
+}
+
+.event-card {
+  position: relative;
+  width: 23.5vw;
+  height: 33.229vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.poster-cover {
+  position: absolute;
+  width: 23.5vw;
+  height: 33.229vw;
+  border-radius: 1rem;
+  background-color: var(--color-covering);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.event-card img {
+  width: 23.5vw;
+  border-radius: 1rem;
+}
+
+.event-card:hover .poster-cover{
+  opacity: 1;
+}
+
+.poster-cover p:first-of-type {
+  font-family: 'Suisse-SemiBold';
+  font-size: 2vw;
+  letter-spacing: -0.1rem;
+  line-height: 83%;
+  margin-bottom: 0.7vw;
+}
+
+.poster-cover p:last-of-type {
+  font-family: 'Suisse';
+  font-size: 1.46vw;
+  letter-spacing: -0.1rem;
+  line-height: 83%;
+}
+
+.poster-cover button {
+  width: 11vw;
+  height: 2.5vw;
+  font-size: 1.46vw;
+  font-family: 'Suisse';
+  color: var(--color-primary);
+  letter-spacing: -0.08rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--color-secondary);
+  padding-bottom: 0.3vw;
+  margin-top: 1vw;
+}
+
+
+
+.notification-hidden {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+#notification.notification-visible {
+  opacity: 1;
+  visibility: visible;
+  backdrop-filter: blur(10px);
+}
+
+.notification-content {
+  width: 80vw;
+  height: 30vw;
+  padding: 3rem;
+  background: #fffbf876;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+#notification.notification-visible .notification-content {
+  transform: scale(1);
+}
+
+.notification-content p {
+  font-family: 'Impact';
+  font-size: 3vw;
+  color: black;
+  text-align: center;
+}
+
+/* GUIDE PAGE */
+
+/* SPACE PAGE */
+
+/* FOOTER */
+
+footer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.footer-wrapper {
+  width: 97vw;
+  height: 96vh;
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-family: 'Impact';
+  font-size: 3.125vw;
+  color: var(--color-primary);
+}
+
+.footer-form p {
+  font-family: 'Suisse';
+  font-size: 1.563vw;
+  color: var(--color-primary);
+}
+
+input {
+  width: 20.3vw;
+  height: 3.1vw;
+  background-color: var(--color-secondary);
+  border: 0.1rem solid var(--color-primary);
+  border-radius: 2rem;
+  padding: 0 0.8vw;
+}
+
+input::-webkit-input-placeholder {
+  color: var(--color-primary);
+  font-family: 'Suisse';
+  font-size: 1.25vw;
+  opacity: 0.7;
+}
+
+input:focus {
+  outline: none;
+  color: var(--color-primary);
+  font-family: 'Suisse';
+  font-size: 1.25vw;
+}
+
+select {
+  width: 22vw;
+  height: 3.1vw;
+  background-color: var(--color-secondary);
+  border: 0.1rem solid var(--color-primary);
+  border-radius: 2rem;
+  color: var(--color-primary);
+  font-family: 'Suisse';
+  font-size: 1.25vw;
+  padding: 0 0.8vw;
+  opacity: 0.7;
+}
+
+select::picker-icon {
+  content: url(../img/picker.svg);
+  width: 0.7vw;
+}
+
+select:focus {
+  outline: none;
+}
+
+select>option {
+  color: var(--color-primary);
+  font-family: 'Suisse';
+  font-size: 1.25vw;
+  width: 22vw;
+  height: 3.1vw;
+  border: 0.1rem solid var(--color-primary);
+}
+
+.send {
+  width: 22vw;
+  height: 3.1vw;
+  border: 0.1rem solid var(--color-primary);
+  color: var(--color-primary);
+  font-family: 'Suisse';
+  font-size: 1.25vw;
+  background-color: var(--color-secondary);
+  border-radius: 2rem;
+}
+
+/*PAGE 404*/
+
+.main-404 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.wrapper-404 {
+  width: 97vw;
+  height: 96vh;
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.circle-1-404 {
+  width: 49vw;
+  animation: rotate 6s linear infinite;
+}
+
+.circle-2-404 {
+  width: 49vw;
+  animation: rotate2 6s linear infinite;
+}
+
+@keyframes rotate {
+  from {transform: rotate(0);}
+  to {transform: rotate(360deg);}
+}
+
+@keyframes rotate2 {
+  from {transform: rotate(0);}
+  to {transform: rotate(-360deg);}
+}
+
+.text-404 {
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 6.5vw;
+}
+
+.text-404 h2 {
+  font-family: 'Impact';
+  font-size: 23.66vw;
+  margin-bottom: 1.8vw;
+}
+
+.text-404 p {
+  font-family: 'Suisse';
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 2vw;
+} 
+
+.return-to-index {
+  width: 24.167vw;
+  height: 3.594vw;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 2rem;
+  color: var(--color-secondary);
+  font-family: 'Suisse';
+  font-size: 1.5vw;
+}
+
+.return-to-index:hover {
+  font-family: 'Suisse-SemiBold';
+  cursor: pointer;
+}
+
+.return-to-index:active {
+  border: 0.1rem var(--color-primary);
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+

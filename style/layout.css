@@ -11,6 +11,10 @@ body, html {
   cursor: url("../img/cursor.svg"), auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 button:hover {
   cursor: url("../img/cursor.svg"), auto;
 }
@@ -32,7 +36,7 @@ background: transparent;
   background: var(--color-secondary);
 }
 
-header  a {
+header a {
   text-decoration: none;
   color: black;
   font-family: 'Suisse';
@@ -67,15 +71,45 @@ nav {
   height: 47vw; 
 }
 
+.main-first-section img {
+  width: 33.7vw;
+  margin-left: 9.3vw;
+  margin-top: -12.5%;
+}
+
 .main-first-section h1 {
 margin-left: 45%;
 }
 
-.main-first-section p {
+.main-first-section-p-2 {
+  color: black;
+  font-family: 'Suisse';
+  font-size: 1.7vw;
+  margin-left: 54.5%;
+  margin-top: -15%;
+}
+
+.main-second-section button {
+  background: transparent;
+  border: 3px solid var(--color-secondary);
+  border-radius: 3rem;
+}
+
+.main-second-section a{
+  color: black;
+}
+
+.main-first-section-p {
   font-family: 'Suisse-Bold';
   font-size: 1.8vw;
   color: var(--color-secondary);
   margin-left: 68%;
+}
+
+.main-cover {
+  margin-top: 40%;
+  margin-left: 9%;
+  width: 26.771vw;
 }
 
 h1 {
@@ -91,10 +125,77 @@ h2 {
   color: black;
 }
 
+.main-second-section {
+  position: relative;
+  height: 94vw;
+}
+
+.main-second-section p {
+  font-family: 'Suisse';
+  font-size: 1.7vw;
+  margin-left: 54.5%;
+  color: black;
+  margin-top: 10%;
+}
+
+.blue-circle {
+  position: absolute;
+  width: 71.613vw;
+  top: 15%;
+  left: 65%;
+}
+
+.go-to-events {
+  position: absolute;
+  margin-top: 28%;
+  margin-left: 31%;
+  height: 4.167vw;
+  width: 20vw;
+  font-size: 1.7vw;
+  font-family: 'Suisse';
+}
+
+.go-to-guide {
+  position: absolute;
+  margin-top: 63%;
+  margin-left: 38%;
+  height: 4.167vw;
+  width: 30vw;
+  font-size: 1.7vw;
+  font-family: 'Suisse';
+}
+
+.main-poster-1 {
+  position: absolute;
+  width: 18.75vw;
+  margin-top: 0%;
+  margin-left: 27%;
+}
+
+.main-poster-2 {
+  position: absolute;
+  width: 18.75vw;
+  margin-top: 15%;
+  margin-left: 6%;
+}
+
+.main-3-p {
+  text-align: center;
+  color: black;
+  font-family: 'Suisse';
+  font-size: 1.7vw;
+}
+
 /* EVENTS PAGE */
 
 .events-first-section h1 {
   margin-left: 48%;
+}
+
+.events-first-section p {
+  color: black;
+  font-family: 'Suisse';
+  font-size: 1.7vw;
 }
 
 .none {
@@ -324,7 +425,6 @@ h3 {
   z-index: 20;
 }
 
-
 .prev-btn {
   left: 0;
 }
@@ -333,12 +433,13 @@ h3 {
   right: 0;
 }
 
+
 /* SPACE PAGE */
 
 .space-main-section > p {
   font-family: 'Suisse';
   color: black;
-  font-size: 1.6vw
+  font-size: 1.7vw
 }
 
 .space-main-section h1 {

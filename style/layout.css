@@ -179,6 +179,14 @@ h2 {
   margin-left: 6%;
 }
 
+.index-p {
+  position: absolute;
+  color: black;
+  font-size: 1.7vw;
+  left: -16.5%;
+  top: 49%;
+}
+
 /* EVENTS PAGE */
 
 .events-first-section h1 {
